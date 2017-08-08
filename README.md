@@ -31,7 +31,7 @@ Usage
 -l: generate a litecoin key/address pair
 -v verbose
 examples:
-	generate a private key and its public address
-		  ./genkey
-		  generate a private key where the public address contains the string 'BiT'
-		  	   ./genkey -s BiT -c -t 8
+	generate a chancoin private key and its public address
+		  ./genkey -C
+		  generate a chancoin private key where the public address contains the string 'ToXiC'
+		  	   ./genkey -s ToXiC -C -t 8
