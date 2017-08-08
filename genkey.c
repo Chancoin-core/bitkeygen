@@ -211,7 +211,7 @@ int main( int argc, char* argv[] ) {
   int verbose = 0;
 
   int ch;
-  while ((ch = getopt(argc, argv, "t:acs:vlh")) != -1) {
+  while ((ch = getopt(argc, argv, "t:acs:vlhC")) != -1) {
     switch (ch) {
     case 't':
       numthreads = atoi ( optarg );
@@ -234,7 +234,11 @@ int main( int argc, char* argv[] ) {
       break;
     case 'l':
       pubKeyVersion = 48;
-      privKeyVersion = 176;
+      privKeyVersion = 176; 
+      break;
+    case 'C':
+      pubKeyVersion = 28;
+      privKeyVersion = 156;
       break;
     }
   }

@@ -13,16 +13,17 @@ Generate a random address and calculate the associated public key.
 
 For linux and mac:
 
-    gcc -o genkey genkey.c -lcrypto && ./genkey
+    gcc -o genkey genkey.c -lcrypto -lpthread
 
 
-To import the private key into the bitcoin client:
+To import the private key into the chancoin client:
     
-    ./bitcoin importprivkey 5xxxxxxxxx "account name"
+    ./chancoind importprivkey Cxxxxxxxxx "account name"
 
 Usage
 -----
 ````
+-C: ChanCoin mode
 -s string: generate a public address with the given string
 -t number: number of threads to use
 -a: allow the string to be anywhere in the public address, not just at the begining
