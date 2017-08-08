@@ -175,6 +175,7 @@ void usage () {
 	   "-a: allow the string to be anywhere in the public address, not just at the begining\n"
 	   "-c: the string should be case sensitive\n"
 	   "-l: generate a litecoin key/address pair\n"
+	   "-C: ChanCoin mode"
 	   "-v verbose\n"
 	   "examples:\n"
 	   "\tgenerate a private key and its public address\n\t\t ./genkey\n"
